@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class EmployeeService {
-    public List<Employee> getEmployees(){
+   /* public List<Employee> getEmployees(){
         Employee employee=new Employee(1,"Craig",20000);
         SalesEmployee salesEmployee= new SalesEmployee(1,"Craig", 20000,1000,
                 0.01f);
@@ -16,5 +16,6 @@ public class EmployeeService {
         employees.add(salesEmployee);
 
 
-    }
+    }*/
+
 }
