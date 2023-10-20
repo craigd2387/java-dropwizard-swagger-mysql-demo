@@ -1,6 +1,6 @@
 package org.kainos.ea.cli;
 
-public class Employee {
+public class Employee implements IPayable, IPermanent{
     private int employeeID;
     private String name;
     private double salary;
@@ -12,13 +12,12 @@ public class Employee {
         setSalary(salary);
     }
 
-    public double calcPay(String role){
-        if(role=="Software Engineer"){
-            return getSalary()/12+1000;
-        }else{
-            return getSalary()/12;
-        }
+    public double calcPay(){
+        return getSalary()/12;
+    }
 
+    public double calcBonus(){
+        return getSalary()*0.1;
     }
     public int getEmployeeID() {
         return employeeID;
